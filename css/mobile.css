@@ -1,0 +1,107 @@
+@font-face {
+	font-family: Coming;
+	src: url("./ComingSoon.ttf");
+}
+
+body {
+	margin: 0px auto;
+	background-color: rgba(188, 91, 177, 0.3);
+}
+
+.bar {
+	width: 100%;
+}
+
+.content {
+	background-color: rgba(188, 91, 177, 0.4);
+	border-radius: 15px;
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.content .content_title {
+	padding: 2px;
+	font-family: Coming;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.content .content_body {
+	padding: 2px;
+	font-family: Coming;
+	font-size: 20px;
+}
+
+.content .content_footer {
+	padding: 2px;
+	font-family: Coming;
+	font-size: 12px;
+	text-align: right;
+}
+
+#status_bar {
+	display: flex;
+	background-color: rgba(188, 91, 177, 0.4);
+	border-bottom: 2px solid rgba(188, 91, 177, 0.5);
+	height: 65px;
+	justify-content: center;
+	font-size: 30px;
+	font-family: Coming;
+	font-weight: bold;
+	color: rgba(178, 80, 160, 1); /*rgba(188, 91, 177, 1);*/
+}
+
+#main_bar {
+	margin: 20px auto;
+	padding: 15px;
+	padding-top: 0px;
+	width: 90%;
+}
+
+#admin_form {
+	margin: 30px auto;
+	padding: 15px;
+	padding-top: 0px;
+	border-radius: 10px;
+	width: 85%;
+	background-color: rgba(188, 91, 177, 0.4);
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Coming;
+}
+
+#form input {
+	padding: 15px;
+	margin: 8px auto;
+	width: 300px;
+	font-family: Coming;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 10px;
+	border: 0px solid transparent;
+	outline: none;
+}
+
+.btn {
+	padding: 15px;
+	margin: 8px auto;
+	background-color: rgba(178, 80, 160, 1);
+	border: 0px solid transparent;
+	width: 200px;
+}
+
+#form #btn {
+	width: 200px;
+}
+
+.heart {
+	position: absolute;
+	background-color: rgba(188, 91, 177, 0.3);
+	height: 50px;
+	width: 50px;
+	clip-path: polygon(47% 24%, 57% 16%, 66% 8%, 77% 5%, 86% 8%, 91% 14%, 94% 22%, 94% 31%, 92% 40%, 89% 49%, 86% 57%, 79% 66%, 74% 75%, 69% 80%, 63% 88%, 55% 95%, 49% 98%, 42% 98%, 36% 91%, 29% 85%, 24% 78%, 19% 70%, 14% 62%, 9% 55%, 6% 44%, 4% 32%, 3% 22%, 5% 9%, 16% 4%, 26% 2%, 36% 7%);
+}
