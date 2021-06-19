@@ -1,7 +1,7 @@
 let populate = ()=>{
 	let id = 0;
 	let xmlHttpRequest = new XMLHttpRequest();
-	xmlHttpRequest.open("GET", "http://nardit.infinityfreeapp.com/nardi/Nusic-master/quotes.php", true);
+	xmlHttpRequest.open("GET", "http://nardit.infinityfreeapp.com/nardi/quotes.php", true);
 	xmlHttpRequest.send(null);
 	xmlHttpRequest.onreadystatechange = ()=>{
 		if (xmlHttpRequest.readyState == 3){
@@ -14,6 +14,8 @@ let populate = ()=>{
 				let resp = JSON.parse(xmlHttpRequest.responseText);
 				
 				resp.forEach((item)=>{
+					let id = document.createElement("div");
+					id.setAttribute("class", "hidden_id");
 					let header = document.createElement("div");
 					header.setAttribute("class", "content_title");
 					let body = document.createElement("div");
@@ -23,6 +25,7 @@ let populate = ()=>{
 					let content = document.createElement("div");
 					content.setAttribute("class", "content");
 					
+					id.innerText = item.id;
 					header.innerText = item.header;
 					body.innerText = item.body;
 					footer.innerText = item.footer;

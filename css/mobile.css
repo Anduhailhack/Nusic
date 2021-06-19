@@ -19,6 +19,10 @@ body {
 	padding: 15px;
 }
 
+.content .hidden_id {
+	display: none;
+}
+
 .content .content_title {
 	padding: 2px;
 	font-family: Coming;
@@ -38,6 +42,66 @@ body {
 	font-size: 12px;
 	text-align: right;
 }
+
+.btn {
+	padding: 15px;
+	margin: 8px auto;
+	font-family: Coming;
+	background-color: rgba(178, 80, 160, 1);
+	border: 0px solid transparent;
+	width: 200px;
+}
+
+#postBtn {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#okBtn {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#dialogOverlay{
+	display: none;
+	opacity: 1;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+	font-family: Coming;
+}
+
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: rgba(178, 80, 160, 1);
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+
+#dialogbox > div{ background-color: rgba(188, 91, 177, 0.4); margin:8px; }
+#dialogbox > #dialogHead{ font-size:19px; padding:10px;}
+#dialogbox > #dialogBody{ display: flex; justify-content: center; padding:40px; }
+#dialogbox > #dialogFoot{ display: flex; justify-content: right; padding:10px;}
+
+textarea {
+	font-family: Coming;
+	width:550px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#headerTextArea {
+	width: 500px;
+}
+
+#footerTextArea {
+	width: 350px;
+}
+
 
 #status_bar {
 	display: flex;
@@ -84,14 +148,6 @@ body {
 	border-radius: 10px;
 	border: 0px solid transparent;
 	outline: none;
-}
-
-.btn {
-	padding: 15px;
-	margin: 8px auto;
-	background-color: rgba(178, 80, 160, 1);
-	border: 0px solid transparent;
-	width: 200px;
 }
 
 #form #btn {
