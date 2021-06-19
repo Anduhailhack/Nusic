@@ -1,7 +1,7 @@
 let populate = ()=>{
 	let id = 0;
 	let xmlHttpRequest = new XMLHttpRequest();
-	xmlHttpRequest.open("GET", "http://localhost:80/quotes.php", true);
+	xmlHttpRequest.open("GET", "http://nardit.infinityfreeapp.com/nardi/Nusic-master/quotes.php", true);
 	xmlHttpRequest.send(null);
 	xmlHttpRequest.onreadystatechange = ()=>{
 		if (xmlHttpRequest.readyState == 3){
